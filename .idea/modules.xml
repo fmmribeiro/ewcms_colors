@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ewcms_colors.iml" filepath="$PROJECT_DIR$/.idea/ewcms_colors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../learn-drupal/.idea/learn-drupal.iml" filepath="$PROJECT_DIR$/../learn-drupal/.idea/learn-drupal.iml" />
     </modules>
   </component>
 </project>

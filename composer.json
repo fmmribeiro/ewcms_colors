@@ -6,7 +6,7 @@
     {
         "type": "package",
         "package": {
-            "name": "custom/ewcms_colors",
+            "name": "EWCMS/ewcms_colors",
             "version": "1.0",
             "type": "drupal-custom-module",
             "source": {
@@ -16,4 +16,4 @@
             }
         }
     }
-],
+]
