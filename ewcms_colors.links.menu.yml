@@ -1,0 +1,5 @@
+ewcms_colors.admin_settings:
+  title: 'Switch colors settings'
+  description: 'Module target settings.'
+  route_name: ewcms_colors.settings
+  parent: 'system.admin_config_development'

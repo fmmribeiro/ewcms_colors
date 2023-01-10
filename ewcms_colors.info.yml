@@ -1,0 +1,10 @@
+name: EWCMS Colors
+description: Allows developers to change EWCMS current theme colors.
+package: EWCMS
+type: module
+core_version_requirement: ^9.1
+php: ^7.3
+configure: ewcms_colors.settings
+
+dependencies:
+    - ewcms_extended

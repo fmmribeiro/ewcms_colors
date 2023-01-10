@@ -1,0 +1,7 @@
+ewcms_colors.settings:
+  path: 'admin/configuration/ewcms-colors/settings'
+  defaults:
+    _form: '\Drupal\ewcms_colors\Form\EwcmsColorsForm'     
+    _title: 'Colors settings'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,4 @@
+services:
+  ewcms_colors.factory:
+    class: Drupal\ewcms_colors\EwcmsColorsFactory
+    arguments: ['@config.factory', '@file_system']
