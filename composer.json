@@ -1,19 +1,30 @@
-"repositories": [
-    {
-        "type": "composer",
-        "url": "https://packages.drupal.org/9"
-    },
-    {
-        "type": "package",
-        "package": {
-            "name": "EWCMS/ewcms_colors",
-            "version": "1.0",
-            "type": "drupal-custom-module",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/serotonine/ewcms_colors.git",
-                "reference": "master"
-            }
+{
+    "name": "ewcms/ewcms_colors",
+    "description": "Allows developers to change EWCMS current theme colors.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Serotonine",
+            "email": "ks.serotonine@gmail.com"
         }
+    ],
+    "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "ewcms/ewcms_colors",
+        "version": "1.0",
+        "type": "drupal-module",
+        "dist": {
+          "url": "https://github.com/serotonine/ewcms_colors",
+          "type": "zip"
+        }
+      }
     }
-]
+  ],
+  "require": {
+      "drupal/core": "^9 || ^10"
+  },
+    "require": {}
+}

@@ -8,6 +8,7 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Config\ImmutableConfig;
+use Drupal\Component\Utility\Color as ColorUtility;
 use StringTranslationTrait;
 
 /**
@@ -27,14 +28,15 @@ class EwcmsColorsFactory {
    */
   protected $fileSystem;
   
-  protected $final_message;
-
   /**
    *  EwcmsColorsFactory constructor.
    *
    * @param Drupal\Core\Config\ConfigFactoryInterface $config_factory
    */
   public function __construct( ConfigFactoryInterface $config_factory, FileSystemInterface $fileSystem) {
+    /**
+    * @type string
+    */
     $this->final_message = "";
     $this->configFactory = $config_factory;
     $this->fileSystem = $fileSystem;
@@ -175,8 +177,9 @@ class EwcmsColorsFactory {
       'to' => [],
     ];
     $pattern = '/^#[a-f0-9]{3,6}$/i';
+    
     foreach ($colors as $key => $value) {
-      if (!preg_match($pattern, $key) || !preg_match($pattern, $value) ) {
+      if (!ColorUtility::validateHex($key) || !ColorUtility::validateHex($value)) {
         \Drupal::messenger()->addError(t('%k or %v is not hexadecimal format', ['%k' => $key, '%v' => $value]));
         $mapping = [];
         break;
